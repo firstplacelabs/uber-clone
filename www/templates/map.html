@@ -1,0 +1,47 @@
+<ion-view view-title="UBER-CLONE">
+
+  <ion-content scroll="false" data-tap-disabled="true">
+      <label class="item item-input startAddress">
+        <span style="color:green;font-size:14px;">&#9673</span><input type="text" class="addressInput" ng-model="data.startAddress" placeholder="Starting Address" ng-change="queryAddress(data.startAddress,0)" ng-click="queryAddress(data.startAddress,0)">
+      </label>
+
+      <label class="item item-input endAddress">
+        <span style="color:red;font-size:14px;">&#9673</span><input type="text" class="addressInput" ng-model="data.endAddress" placeholder="Enter Destination" ng-change="queryAddress(data.endAddress,1)" ng-click="queryAddress(data.endAddress,1)">
+      </label>
+
+      <label class="item item-input possibleAddress" ng-repeat="address in possibleAddresses"  ng-style="{top: 142+(44*$index) + 'px'}" ng-hide="hideAddressList" ng-click="chooseAddress(address)">
+      <i class="ion-location"></i>
+        <span style="color:white;font-size:14px;">&#9673</span>
+        <div class="addressItem">{{address.place_name | split:',':0}}<br>
+        {{address.place_name | split:',':1}}, {{address.place_name | split:',':2}}</div>
+      </label>
+
+      <bluedot x="user.x" y="user.y" ng-show="!zooming"></bluedot>
+      <div class="button button-icon button-block icon-center ion-navigate navme" ng-click="centerOnLocation()"></div>
+      
+      <a class="item item-icon-right setLocationBtn" href="#" ng-show="showPickupBtn">
+      SET PICKUP LOCATION
+      <i class="icon ion-android-arrow-dropright-circle icon-accessory"></i>
+      </a>
+      <div class="pin-android" ng-show="isAndroid()"></div>
+      <div class="pin-ios" ng-show="isIOS()"></div>
+
+      <leaflet id="map" markers="markers" center="myCenter" width="100%"  height="100%" tiles="tiles" inertia="true" inertiaDeceleration="1000" inertiaMaxSpeed="1000">
+      </leaflet>
+  </ion-content>
+
+  <ion-footer-bar class=" tabs tabs-stable" style="border-color:#f8f8f8;border-top:none;background-image:none;margin: 0px 0px; padding: 0px 0px;height:48px;">
+
+      <a class="tab-item icon  ion-android-car" ng-click="choose(0)" style="font-size:24px;font-weight:bold;">
+        <span style="font-size:12px;">SUV</span>
+      </a>
+      <a class="tab-item icon ion-model-s tab-item-active" style="font-size:24px;font-weight:bold;">
+        <span style="font-size:12px;">TESLA</span>
+        
+      </a>
+      <a class="tab-item icon ion-jet" ng-click="choose(1)" style="font-size:24px;font-weight:bold;">
+        <span style="font-size:12px;">JET</span>
+        
+      </a>
+  </ion-footer-bar>
+</ion-view>

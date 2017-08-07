@@ -1,0 +1,221 @@
+
+.menu.menu-left .bar.bar-header {
+    background: rgba(7, 7, 23, 0.16); 
+    color:#ddd;
+    border:none;
+}
+.item-divider{
+	background-color:#070717 !important;
+	color:#eee;
+	padding-top:15px;
+	padding-bottom: 15px;
+	border:none;
+	font-size: 14px;
+}
+
+.item-divider i{
+	margin-right:11px;
+	color:#ddd;
+}
+
+.ion-side-menu{
+	padding:none;
+}
+
+.uber-menu-left{
+	background: ;
+	background-color:#070717 !important;
+}
+.uber-menu-left.menu.menu-left .bar.bar-header.item-input-inset img {
+	width: 28px;
+	height: 28px;
+	margin-right: 11px;
+	background: #fff;
+	border-radius: 3px; }
+}
+#pin2{
+	position:absolute;
+  background: url('../img/Pin.png') no-repeat 0 0;
+  background-size: cover;
+  width: 28px !important;
+  height: 40px !important;
+  left:50%;
+  top:50%;
+  display: block;
+  text-align: center;
+  z-index: 90;
+}
+.navme{
+  position:fixed !important;
+  bottom:72px !important;
+  right:10px !important;
+  z-index:99;
+  background-color:#eee;
+  min-height:32px !important;
+  height:32px;
+  line-height:32px;
+  border-radius:3px;
+  border:1px solid #ddd;
+}
+#map {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0 !important;
+}
+.scroll {
+  height: 100%;
+}
+
+@-moz-keyframes pulsate {
+    from {
+        -moz-transform: scale(0.25);
+        opacity: 1.0;
+    }
+    95% {
+        -moz-transform: scale(1.3);
+        opacity: 0;
+    }
+    to {
+        -moz-transform: scale(0.3);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes pulsate {
+    from {
+        -webkit-transform: scale(0.5);
+        opacity: 1.0;
+    }
+    95% {
+        -webkit-transform: scale(1.3);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: scale(0.3);
+        opacity: 0;
+    }
+}
+.addressBubble{
+  position:absolute;
+  z-index: 90;
+  height: 40px !important;
+  width: 275px !important;
+  background-color:black;
+  color:white;
+  z-index: 99;
+  left:50%;
+  top:47%;
+}
+.pin-android{
+	position:absolute;
+	z-index: 90;
+	height: 40px !important;
+    width: 22px !important;
+    background-color:red;
+    z-index: 99;
+    background: url('../img/pin-android.png') no-repeat 100% center;
+  	background-size: cover;
+  	left:50%;
+  	top:47%;
+}
+.setLocationBtn{
+  text-align: center;
+  position:absolute;
+  z-index: 90;
+  height: 42px !important;
+  line-height: 42px;
+  width: 240px !important;
+  border: solid 1px;
+  border-radius: 12px;
+  color:#fff !important;
+  background-color: #000;
+  opacity: .85;
+  font-size:14px;
+  font-weight: bold;
+  z-index: 99;
+  left:50%;
+  top:50%;
+  margin-left:-100px;
+  margin-top:-60px;
+  padding: 0px 0px;
+}
+
+.pin-ios{
+	position:absolute;
+	z-index: 90;
+	height: 40px !important;
+    width: 30px !important;
+    background-color:red;
+    z-index: 99;
+    background: url('../img/pin-ios.png') no-repeat 100% center;
+  	background-size: cover;
+  	left:50%;
+  	top:46%;
+}
+/*.user:before {
+	position:absolute;
+    content: ' \25CF';
+    font-size: 32px;
+    z-index: 99;
+    color: #2DA2AE;
+}*/
+.user{
+	position:absolute;
+	z-index: 90;
+	border:1pt solid #fff !important;
+	background-color: #2DA2AE;
+	border: 3px solid #999;
+	-webkit-border-radius: 30px;
+  border-radius: 30px;
+	height: 24px !important;
+	width: 24px !important;
+  padding: 0px;
+}
+.startAddress{
+  position:absolute;
+  z-index:99;
+  top:44px;
+  width:300px;
+  margin: auto;
+  left:0px;
+  right:0px;
+}
+.endAddress{
+  position:absolute;
+  z-index:99;
+  top:88px;
+  width:300px;
+  margin: auto;
+  left:0px;
+  right:0px;
+}
+.possibleAddress{
+  position:absolute;
+  z-index:999;
+  top:180px;
+  width:300px;
+  margin: auto;
+  left:0px;
+  right:0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  
+  left: 50%;
+  transform: translateX(-50%);
+}
+.addressItem{
+    display: block;
+    padding-top: 2px;
+    padding-left: 0;
+    height: 34px;
+    color: #111;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 16px;
+    z-index: 101 !important;
+}
+
+.addressInput{
+  text-align:center;
+}
+/* Empty. Add your own CSS if you like */

@@ -1,0 +1,28 @@
+<ion-side-menus enable-menu-with-back-views="true">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-light">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon ion-navicon" menu-toggle="left" ng-click="preventFocus()"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu watch-menu side="left" class="uber-menu-left" width="320">
+    <ion-header-bar class="item-input-inset">
+      <img src="img/ionic.png" alt="">
+      IonicDevs
+    </ion-header-bar>
+    <ion-content >
+      <ion-list class="uber-items">
+        <ion-item class="item-divider"><i class="icon ion-card"></i>PAYMENT</ion-item>
+        <ion-item class="item-divider"><i class="icon ion-clock"></i>HISTORY</ion-item>
+        <ion-item class="item-divider"><i class="icon ion-help-buoy"></i>HELP</ion-item>
+        <ion-item class="item-divider"><i class="icon ion-android-share-alt"></i>FREE RIDES</ion-item>
+        <ion-item class="item-divider"><i class="icon ion-android-notifications"></i>NOTIFICATIONS</ion-item>
+        <ion-item class="item-divider"><i class="icon ion-gear-a "></i>SETTINGS</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
